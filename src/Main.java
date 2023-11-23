@@ -1,3 +1,4 @@
+import game.Termo;
 import word.Word;
 import java.util.Random;
 import java.util.List;
@@ -9,7 +10,9 @@ public class Main {
         Word word = new Word();
         List<String> words = word.formater();
 
-        String assertWords = words.get(random.nextInt(5000));
-        System.out.println(assertWords);
+        String palavraEscolhida = words.get(random.nextInt(5000));
+
+        Termo termo = new Termo(palavraEscolhida);
+        System.out.println(termo.jogar());
     }
 }
