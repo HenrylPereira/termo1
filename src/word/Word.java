@@ -20,7 +20,7 @@ public class Word {
 
         // Use try-with-resources para garantir o fechamento automático do BufferedReader
         try (BufferedReader br = new BufferedReader(
-                new InputStreamReader(Word.class.getResourceAsStream("/words.txt"), StandardCharsets.UTF_8))) {
+                new InputStreamReader(Word.class.getResourceAsStream("/word/words.txt"), StandardCharsets.UTF_8))) {
 
             String linha;
 
